@@ -1,3 +1,5 @@
+> [!WARNING] 
+>All of these commands are designed for Ubuntu. Check out the [UMU Git Repo](https://github.com/Open-Wine-Components/umu-launcher?tab=readme-ov-file#building) for other destro support.
 <!DOCTYPE html>
 <html lang="en">
 <head>
