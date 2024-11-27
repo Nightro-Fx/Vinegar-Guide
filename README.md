@@ -37,7 +37,7 @@ git clone https://github.com/vinegarhq/vinegar
 cd vinegar
 sudo apt-get install make
 sudo make install
-make mime
+sudo make mime
 ```
 ###### Make sure Vinegar is installed
 ```bash
