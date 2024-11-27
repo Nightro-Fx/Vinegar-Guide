@@ -1,5 +1,5 @@
 > [!WARNING] 
->All of these commands are designed for Ubuntu. Check out the [UMU Git Repo](https://github.com/Open-Wine-Components/umu-launcher?tab=readme-ov-file#building) for other destro support.
+>All of these commands are designed for Ubuntu. Check out the [UMU Git Repo](https://github.com/Open-Wine-Components/umu-launcher?tab=readme-ov-file#building) for other destro support and the [Gio website](https://gioui.org/doc/install/linux) for Dependencies.
 <!DOCTYPE html>
 <html lang="en">
 <head>
