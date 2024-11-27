@@ -33,8 +33,10 @@ go version
 ###### Installting Vinegar from Source
 ```bash
 cd
+sudo apt-get install git
 git clone https://github.com/vinegarhq/vinegar
 cd vinegar
+sudo apt-get install make
 sudo make install
 make mime
 ```
