@@ -23,10 +23,9 @@ sudo dpkg --add-architecture i386 && sudo apt update
 sudo apt install python3-xlib python3-filelock apparmor-profiles libgl1-mesa-dri:i386 libglx-mesa0:i386
 ```
 
-###### Getting the latest version of Golang
+###### Getting the latest version of Golang. [Chick Here](https://github.com/Nightro-Fx/Golang-Installation-Guide) to see a guide!
 ```bash
-# Make sure you have the 1.23.3 version (latest)
-sudo snap install go --classic
+# Make sure you have the 1.23.3 version (latest). If you don't, then check out the link above.
 go version
 ```
 
