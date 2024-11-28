@@ -16,6 +16,10 @@
 #### ❤️ Acknowledgements  
 Massive shoutout to the [Official Vinegar Discord Server](https://discord.gg/vinegarhq-1069506340973707304) for providing me the resources and the information needed to make this guide possible.
 
+###### Delete your previous Vinegar from flatpak
+```bash
+flatpak uninstall --delete-data org.vinegarhq.Sober
+```
 ###### Installing Required Dependencies
 ```bash
 sudo apt install gcc pkg-config libwayland-dev libx11-dev libx11-xcb-dev libxkbcommon-x11-dev libgles2-mesa-dev libegl1-mesa-dev libffi-dev libxcursor-dev libvulkan-dev
