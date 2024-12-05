@@ -87,6 +87,7 @@ WINEPREFIX="~/.local/share/vinegar/prefixes/studio" GAMEID=0 PROTONPATH=GE-Proto
 ```
 
 ## Troubleshooting
+#### Black Login Window
 <img src="https://github.com/Nightro-Fx/Vinegar-Guide/blob/main/img/Black_Login_Window.png" width="600" alt="Problem"/> 
 
 ###### To fix the black login window run:
@@ -95,3 +96,11 @@ pkill -f webview
 ```
 
 ###### Now MAKE SURE to have Chrome installed and set as your default browser, When you press *Login via Browser*. You need to login from Chrome
+
+#### Dependencies Issues
+<img src="https://github.com/Nightro-Fx/Vinegar-Guide/blob/main/img/Neofetch.png" width="400" alt="Problem"/> 
+
+```bash
+# Please upgrade your Ubuntu to the latest version (24.04 LTS), Umu Launcher is NOT made for older versions
+xdg-open https://youtu.be/ULeBDYl6uJM?si=OYYzdfMykdl0HAWm
+```
