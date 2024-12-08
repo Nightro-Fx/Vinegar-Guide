@@ -47,10 +47,6 @@ sudo make mime
 ```bash
 vinegar version
 ```
-###### Running Vinegar to install the Roblox Dependencies
-```bash
-vinegar -firstrun studio run
-```
 
 ###### Installing UMU
 ```bash
@@ -80,6 +76,11 @@ PROTONPATH = "/home/your_username/GE-Proton9-20"
 GAMEID= "0"
 PROTON_VERB = "run"
 ```
+###### Running Vinegar to install the Roblox Dependencies
+```bash
+vinegar -firstrun studio run
+```
+
 ###### Setting a New Wine Prefix
 ```bash
 vinegar delete
