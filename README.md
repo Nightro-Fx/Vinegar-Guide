@@ -57,11 +57,6 @@ cd umu-launcher && \
 sudo dpkg -i *.deb
 ```
 
-###### Installing Proton GE (Located in Home)
-```bash
-wget -O ~/GE-Proton9-20.tar.gz https://github.com/GloriousEggroll/proton-ge-custom/releases/download/GE-Proton9-20/GE-Proton9-20.tar.gz && tar -xvzf ~/GE-Proton9-20.tar.gz -C ~ && rm ~/GE-Proton9-20.tar.gz
-```
-
 ###### Editing Vinegar Config File
 ```bash
 vinegar edit
@@ -69,19 +64,15 @@ vinegar edit
 ###### Configure your file to look something like this
 ```bash
 [studio]
-wineroot = "/home/your_username/GE-Proton9-20"
+wineroot = "/home/ur_username/.local/share/Steam/compatibilitytools.d/GE-Proton9-20"
 
 [studio.env]
-PROTONPATH = "/home/your_username/GE-Proton9-20"
+PROTONPATH = "/home/ur_username/.local/share/Steam/compatibilitytools.d/GE-Proton9-20"
 GAMEID= "0"
 PROTON_VERB = "run"
 ```
-###### Running Vinegar to install the Roblox Dependencies
-```bash
-vinegar -firstrun studio run
-```
 
-###### Setting a New Wine Prefix
+###### Opening Vinergar :)
 ```bash
 WINEPREFIX="~/.local/share/vinegar/prefixes/studio" GAMEID=0 PROTONPATH=GE-Proton umu-run "$(find ~/.local/share/vinegar/versions/ -name "RobloxStudioBeta.exe")"
 ```
