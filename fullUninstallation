@@ -1,0 +1,63 @@
+# PLEASE GO THROUGH ALL THE COMMANDS BEFORE RUNNING THEM, AS I AM NOT RESPONSIBLE FOR ANY POTENTIAL DAMAGES!!!!
+
+# Step 1: Remove installed dependencies
+sudo apt remove --purge -y \
+    gcc pkg-config libwayland-dev libx11-dev libx11-xcb-dev \
+    libxkbcommon-x11-dev libgles2-mesa-dev libegl1-mesa-dev \
+    libffi-dev libxcursor-dev libvulkan-dev python3-xlib \
+    python3-filelock apparmor-profiles libgl1-mesa-dri:i386 \
+    libglx-mesa0:i386 git make
+sudo apt autoremove -y
+
+# Step 2: Remove Go installation and related files
+sudo snap remove go
+sudo rm -rf /usr/local/go
+
+# Step 3: Delete Vinegar source and uninstall
+cd ~/vinegar || exit
+sudo ma# Step 1: Remove installed dependencies
+sudo apt remove --purge -y \
+    gcc pkg-config libwayland-dev libx11-dev libx11-xcb-dev \
+    libxkbcommon-x11-dev libgles2-mesa-dev libegl1-mesa-dev \
+    libffi-dev libxcursor-dev libvulkan-dev python3-xlib \
+    python3-filelock apparmor-profiles libgl1-mesa-dri:i386 \
+    libglx-mesa0:i386 git make
+sudo apt autoremove -y
+
+# Step 2: Remove Go installation and related files
+sudo snap remove go
+sudo rm -rf /usr/local/go
+
+# Step 3: Delete Vinegar source and uninstall
+cd ~/vinegar || exit
+sudo make uninstall
+rm -rf ~/vinegar
+
+# Step 4: Remove UMU Launcher files
+rm -rf go1.23.3.linux-amd64.tar.gz
+rm -rf Ubuntu-24.zip
+rm -rf umu-launcher
+
+# Step 5: Remove Vinegar configuration files
+rm -f ~/.local/share/vinegar/prefixes/studio
+rm -f ~/.local/share/vinegar/versions/*RobloxStudioBeta.exe
+
+# Step 6: Remove Wine prefix and Proton compatibility tools
+rm -rf ~/.local/share/Steam/compatibilitytools.d/GE-Proton9-21
+rm -rf ~/.local/share/vinegar/prefixes
+ke uninstall
+rm -rf ~/vinegar
+
+# Step 4: Remove UMU Launcher files
+rm -rf go1.23.3.linux-amd64.tar.gz
+rm -rf Ubuntu-24.zip
+rm -rf umu-launcher
+
+# Step 5: Remove Vinegar configuration files
+rm -f ~/.local/share/vinegar/prefixes/studio
+sudo rm -f /usr/share/applications/org.vinegarhq.Vinegar*.desktop
+rm -f ~/.local/share/vinegar/versions/*RobloxStudioBeta.exe
+
+# Step 6: Remove Wine prefix and Proton compatibility tools
+rm -rf ~/.local/share/Steam/compatibilitytools.d/GE-Proton9-21
+rm -rf ~/.local/share/vinegar/prefixes
