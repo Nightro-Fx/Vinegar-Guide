@@ -18,7 +18,7 @@ Massive shoutout to the [Official Vinegar Discord Server](https://discord.gg/vin
 
 ###### Delete your previous Vinegar from flatpak
 ```bash
-flatpak uninstall --delete-data org.vinegarhq.Vinegar
+flatpak uninstall --delete-data org.vinegarhq.Vinegar -y
 ```
 ###### Installing Required Dependencies
 ```bash
