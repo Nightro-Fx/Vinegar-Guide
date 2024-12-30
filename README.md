@@ -64,10 +64,10 @@ vinegar edit
 ###### Configure your file to look something like this
 ```bash
 [studio]
-wineroot = "/home/ur_username/.local/share/Steam/compatibilitytools.d/GE-Proton9-21"
+wineroot = "/home/ur_username/.local/share/Steam/compatibilitytools.d/GE-Proton9-22"
 
 [studio.env]
-PROTONPATH = "/home/ur_username/.local/share/Steam/compatibilitytools.d/GE-Proton9-21"
+PROTONPATH = "/home/ur_username/.local/share/Steam/compatibilitytools.d/GE-Proton9-22"
 GAMEID= "0"
 PROTON_VERB = "run"
 ```
