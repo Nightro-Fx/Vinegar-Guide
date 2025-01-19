@@ -77,6 +77,13 @@ PROTON_VERB = "run"
 WINEPREFIX="~/.local/share/vinegar/prefixes/studio" GAMEID=0 PROTONPATH=GE-Proton umu-run "$(find ~/.local/share/vinegar/versions/ -name "RobloxStudioBeta.exe")"
 ```
 
+###### Import File Location
+Your sandboxed environment for the Vinegar is located at `~/.var/app/org.vinegarhq.Vinegar/data/vinegar/prefixes/studio/drive_c`. 
+Run the following command to open the directory:
+```bash
+xdg-open ~/.var/app/org.vinegarhq.Vinegar/data/vinegar/prefixes/studio/drive_c
+```
+
 ## Troubleshooting
 #### Black Login Window
 <img src="https://github.com/Nightro-Fx/Vinegar-Guide/blob/main/img/Black_Login_Window.png" width="600" alt="Problem"/> 
