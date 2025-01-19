@@ -11,11 +11,13 @@ jobs:
   update-readme:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write  # Allow write access to the repository contents (necessary for pushing changes)
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-        # No need to pass token here, it is automatically handled by GitHub Actions
-      
+
       - name: Set Proton Version
         run: |
           proton_version="GE-Proton9-12"
@@ -31,4 +33,4 @@ jobs:
           git commit -m "Update Proton version in README"
           git push
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}  # This is passed for pushing changes
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}  # Using your personal access token for authentication
