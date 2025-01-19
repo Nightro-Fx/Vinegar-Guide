@@ -14,16 +14,13 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GH_TOKEN }}
 
       - name: Set Proton Version
         run: |
-          # Extract the Proton version
           proton_version="GE-Proton9-12"
-          
-          # Replace "ur_username" with the GitHub username
-          user_name="your_github_username"
-
-          # Update the README file with the correct Proton version
+          user_name="Nightro-Fx"
           sed -i "s|wineroot = \"/home/ur_username/.local/share/Steam/compatibilitytools.d/GE-Proton[^\"]*\"|wineroot = \"/home/$user_name/.local/share/Steam/compatibilitytools.d/$proton_version\"|g" README.md
           sed -i "s|PROTONPATH = \"/home/ur_username/.local/share/Steam/compatibilitytools.d/GE-Proton[^\"]*\"|PROTONPATH = \"/home/$user_name/.local/share/Steam/compatibilitytools.d/$proton_version\"|g" README.md
 
@@ -34,3 +31,5 @@ jobs:
           git add README.md
           git commit -m "Update Proton version in README"
           git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
