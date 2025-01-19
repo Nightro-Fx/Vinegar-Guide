@@ -24,7 +24,6 @@ jobs:
           user_name="Nightro-Fx"
           sed -i "s|wineroot = \"/home/ur_username/.local/share/Steam/compatibilitytools.d/GE-Proton[^\"]*\"|wineroot = \"/home/$user_name/.local/share/Steam/compatibilitytools.d/$proton_version\"|g" README.md
           sed -i "s|PROTONPATH = \"/home/ur_username/.local/share/Steam/compatibilitytools.d/GE-Proton[^\"]*\"|PROTONPATH = \"/home/$user_name/.local/share/Steam/compatibilitytools.d/$proton_version\"|g" README.md
-
       - name: Commit and push changes
         run: |
           git config --global user.name "GitHub Actions"
