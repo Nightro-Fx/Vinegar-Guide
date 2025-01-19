@@ -24,15 +24,16 @@ jobs:
         run: |
           proton_version="GE-Proton9-12"
           user_name="Nightro-Fx"
+          # Update the README file with the correct Proton version
           sed -i "s|wineroot = \"/home/ur_username/.local/share/Steam/compatibilitytools.d/GE-Proton[^\"]*\"|wineroot = \"/home/$user_name/.local/share/Steam/compatibilitytools.d/$proton_version\"|g" README.md
           sed -i "s|PROTONPATH = \"/home/ur_username/.local/share/Steam/compatibilitytools.d/GE-Proton[^\"]*\"|PROTONPATH = \"/home/$user_name/.local/share/Steam/compatibilitytools.d/$proton_version\"|g" README.md
+          
+          # Debugging output to check changes
+          cat README.md  # This will output the contents of README.md after modification
 
       - name: Commit and push changes
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
           git add README.md
-          git commit -m "Update Proton version in README"
-          git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Using the GitHub token for authentication
+          git 
