@@ -14,9 +14,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-        with:
-          token: ${{ secrets.GH_TOKEN }}
-
+        # No need to pass token here, it is automatically handled by GitHub Actions
+      
       - name: Set Proton Version
         run: |
           proton_version="GE-Proton9-12"
@@ -32,4 +31,4 @@ jobs:
           git commit -m "Update Proton version in README"
           git push
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}  # This is passed for pushing changes
