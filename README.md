@@ -1,5 +1,5 @@
 > [!WARNING] 
->All of these commands are designed for Ubuntu. Check out the [UMU Git Repo](https://github.com/Open-Wine-Components/umu-launcher?tab=readme-ov-file#building) for other destro support and the [Gio website](https://gioui.org/doc/install/linux) for Dependencies.
+>All of these commands are designed for Ubuntu. Check out the [UMU Git Repo](https://github.com/Open-Wine-Components/umu-launcher?tab=readme-ov-file#building) for other destro support and the [Gio website](https://gioui.org/doc/install/linux) for Dependencies. Also, If Your using vinegar from the flatpak then you must make sure the config is clear by default, but in this case we are using Vingar from the source so we will have to configure it ourselves.
 <!DOCTYPE html>
 <html lang="en">
 <head>
