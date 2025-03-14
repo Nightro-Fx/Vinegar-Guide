@@ -51,10 +51,9 @@ vinegar version
 ###### Installing UMU
 ```bash
 cd
-wget https://github.com/Open-Wine-Components/umu-launcher/releases/download/1.1.4/Ubuntu-24.zip -O Ubuntu-24.zip && \
-unzip Ubuntu-24.zip -d umu-launcher && \
-cd umu-launcher && \
-sudo dpkg -i *.deb
+wget https://github.com/Open-Wine-Components/umu-launcher/releases/download/1.2.5/python3-umu-launcher_1.2.5-1_amd64_ubuntu-noble.deb -O umu-launcher.deb && \
+sudo dpkg -i umu-launcher.deb && \
+sudo apt-get install -f  # Fix dependencies if needed
 ```
 
 ###### Editing Vinegar Config File
@@ -64,10 +63,10 @@ vinegar edit
 ###### Configure your file to look something like this
 ```bash
 [studio]
-wineroot = "/home/Nightro-Fx/.local/share/Steam/compatibilitytools.d/GE-Proton9-25"
+wineroot = "/home/Nightro-Fx/.local/share/Steam/compatibilitytools.d/GE-Proton9-26"
 
 [studio.env]
-PROTONPATH = "/home/Nightro-Fx/.local/share/Steam/compatibilitytools.d/GE-Proton9-25"
+PROTONPATH = "/home/Nightro-Fx/.local/share/Steam/compatibilitytools.d/GE-Proton9-26"
 GAMEID= "0"
 PROTON_VERB = "run"
 ```
